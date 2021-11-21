@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-def print_reversed_list_integer(my_list=[]):
-        if my_list:
-                my_list.reverse()
-                for i in my_list:
-                        print("{:d}".format(i))
+def new_in_list(my_list, idx, element):
+    list_copy = my_list.copy()
+    if idx >= 0 and idx < len(my_list):
+        list_copy[idx] = element
+    return list_copy
